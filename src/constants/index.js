@@ -17,50 +17,22 @@ export const abouts = [
   },
 ];
 
-export const works = [
+export const projects = [
   {
-    title: 'UI/UX Design',
-    img: images.programmer,
-    tags: 'UI/UX Design',
-    projectLink: 'https://github.com/karlken31/ims_project',
+    title: 'Inventory Management System',
+    img: images.ims,
+    tags: 'PHP Projects',
     codeLink: 'https://github.com/karlken31/ims_project',
     description:
-      "I'm, an aspiring programmer with a passion for coding and learning. While I may not have professional experience yet.",
+      'An inventory management system (or inventory system) is the process by which you track your goods throughout your entire supply chain, from purchasing to production to end sales. It governs how you approach inventory management for your business.',
   },
   {
-    title: 'React JS',
-    img: images.webDev,
-    tags: 'React JS',
-    projectLink: 'https://github.com/karlken31/ims_project',
+    title: 'Library Management System',
+    img: images.lms,
+    tags: 'PHP Projects',
+    codeLink: 'https://github.com/SaucedCODER/LMSPROJECT2021',
     description:
-      "I'm, a motivated web developer with a keen interest in crafting engaging and user-friendly online experiences.",
-  },
-  {
-    title: 'PHP',
-    img: images.webDev,
-    tags: 'PHP',
-    projectLink: 'https://github.com/karlken31/ims_project',
-    codeLink: 'https://github.com/karlken31/ims_project',
-    description:
-      "I'm, a motivated web developer with a keen interest in crafting engaging and user-friendly online experiences.",
-  },
-  {
-    title: 'Java',
-    img: images.webDev,
-    tags: 'Java',
-    projectLink: 'https://github.com/karlken31/ims_project',
-    codeLink: 'https://github.com/karlken31/ims_project',
-    description:
-      "I'm, a motivated web developer with a keen interest in crafting engaging and user-friendly online experiences.",
-  },
-  {
-    title: 'Python',
-    img: images.webDev,
-    tags: 'Python',
-    projectLink: 'https://github.com/karlken31/ims_project',
-    codeLink: 'https://github.com/karlken31/ims_project',
-    description:
-      "I'm, a motivated web developer with a keen interest in crafting engaging and user-friendly online experiences.",
+      'Library management systems are designed to manage the movement of books and maintain records of the members in a library. The software solution is designed based on the system requirements, the people involved, the content of the operation and the activity to be performed.',
   },
 ];
 
@@ -68,61 +40,61 @@ export const skills = [
   {
     name: 'HTML',
     icon: images.html,
-    bgColor: '#000',
+    bgColor: '#F0F3F4',
   },
   {
     name: 'CSS',
     icon: images.css,
-    bgColor: '#000',
+    bgColor: '#F0F3F4',
   },
   {
     name: 'JavaScript',
     icon: images.javascript,
-    bgColor: '#000',
+    bgColor: '#F0F3F4',
   },
   {
     name: 'Git',
     icon: images.git,
-    bgColor: '#000',
-  },
-  {
-    name: 'Material UI',
-    icon: images.mu5,
-    bgColor: '#000',
+    bgColor: '#F0F3F4',
   },
   {
     name: 'Figma',
     icon: images.figma,
-    bgColor: '#000',
+    bgColor: '#F0F3F4',
   },
   {
-    name: 'Material UI',
-    icon: images.mu5,
-    bgColor: '#000',
+    name: 'PHP',
+    icon: images.php,
+    bgColor: '#F0F3F4',
   },
   {
-    name: 'Material UI',
-    icon: images.mu5,
-    bgColor: '#000',
+    name: 'Laravel',
+    icon: images.laravel,
+    bgColor: '#F0F3F4',
   },
   {
-    name: 'Material UI',
-    icon: images.mu5,
-    bgColor: '#000',
+    name: 'Node JS',
+    icon: images.nodejs,
+    bgColor: '#F0F3F4',
   },
   {
-    name: 'Material UI',
-    icon: images.mu5,
-    bgColor: '#000',
+    name: 'Tailwind CSS',
+    icon: images.tailwind,
+    bgColor: '#F0F3F4',
   },
   {
-    name: 'Material UI',
-    icon: images.mu5,
-    bgColor: '#000',
+    name: 'Bootstrap',
+    icon: images.bootstrap,
+    bgColor: '#F0F3F4',
   },
   {
-    name: 'Material UI',
-    icon: images.mu5,
-    bgColor: '#000',
+    name: 'jQuery',
+    icon: images.jquery,
+    bgColor: '#F0F3F4',
+  },
+  {
+    name: 'MySQL',
+    icon: images.mysql,
+    bgColor: '#F0F3F4',
   },
 ];

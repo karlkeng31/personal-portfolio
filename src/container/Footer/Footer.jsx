@@ -1,40 +1,32 @@
+/* import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+ */
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Footer.scss';
 
 const Footer = () => {
-  /*  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  /* const form = useRef();
 
-  const { username, email, message } = formData;
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = () => {
-    setLoading(true);
-
-    const contact = {
-      _type: 'contact',
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
-
-    client
-      .create(contact)
-      .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
+    emailjs
+      .sendForm(
+        'service_5dfc83g',
+        'template_pl9pnmj',
+        form.current,
+        'qU5NURGH6gxo1YwLT'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('Messege sent!');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   }; */
 
   return (
@@ -44,23 +36,27 @@ const Footer = () => {
         <div className='app__footer-card '>
           <img src={images.email} alt='email' />
           <a href='mailto:hello@micael.com' className='p-text'>
-            hello@micael.com
+            hello@karlg.com
           </a>
         </div>
         <div className='app__footer-card'>
           <img src={images.mobile} alt='phone' />
           <a href='tel:+1 (123) 456-7890' className='p-text'>
-            +1 (123) 456-7890
+            (+63) 917-123-4567
           </a>
         </div>
       </div>
-      <div className='app__footer-form app__flex'>
+      <form
+        /*  ref={form}
+        onSubmit={sendEmail} */
+        className='app__footer-form app__flex'
+      >
         <div className='app__flex'>
           <input
             className='p-text'
             type='text'
             placeholder='Your Name'
-            name='username'
+            name='user_name'
           />
         </div>
         <div className='app__flex'>
@@ -68,7 +64,7 @@ const Footer = () => {
             className='p-text'
             type='email'
             placeholder='Your Email'
-            name='email'
+            name='user_email'
           />
         </div>
         <div>
@@ -78,7 +74,11 @@ const Footer = () => {
             name='message'
           />
         </div>
-        <button type='button'>Submit</button>
+        <button type='submit'>Submit</button>
+      </form>
+      <div className='copyright'>
+        <p className='p-text'>@2020 Karl Ken. G.</p>
+        <p className='p-text'>All rights reserved</p>
       </div>
     </>
   );

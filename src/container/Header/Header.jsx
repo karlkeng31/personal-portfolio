@@ -27,13 +27,13 @@ const Header = () => (
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className='p-text'>Hello, I am</p>
-            <h1 className='head-text'>Micael</h1>
+            <h1 className='head-text'>Ken</h1>
           </div>
         </div>
 
         <div className='tag-cmp app__flex'>
           <p className='p-text'>Web Developer</p>
-          <p className='p-text'>Freelancer</p>
+          <p className='p-text'>Software Developer</p>
         </div>
       </div>
     </motion.div>
@@ -43,7 +43,6 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className='app__header-img'
     >
-      <img src={images.profile} alt='profile_bg' />
       <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
@@ -56,13 +55,20 @@ const Header = () => (
     <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
-      className='app__header-circles'
+      className='app__header-quotes'
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
-        <div className='circle-cmp app__flex' key={`circle-${index}`}>
-          <img src={circle} alt='profile_bg' />
-        </div>
-      ))}
+      <p className='p-text'>
+        “If debugging is the process of removing software bugs, then programming
+        must be the process of putting them in.” - Edsger Dijkstra
+      </p>
+      <p className='p-text'>
+        “No matter which field of work you want to go in, it is of great
+        importance to learn at least one programming language.” ― Ram Ray
+      </p>
+      <p className='p-text'>
+        “Clean code always looks like it was written by someone who cares.” ―
+        Robert C. Martin
+      </p>
     </motion.div>
   </div>
 );
